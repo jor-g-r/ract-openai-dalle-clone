@@ -7,7 +7,7 @@
 }
 
 body { 
-    background-color: #fcfcfc;
+    background-color: #eaeaea;
 }
 
 .generate-btn {
@@ -21,8 +21,8 @@ body {
     position: relative;
     overflow: hidden;
     z-index: 1;
-    box-shadow: 6px 6px 12px #c5c5c5,
-                -6px -6px 12px #ffffff;
+    box-shadow: 3px 4px 16px #c5c5c591,
+                -3px -3px 13px #ffffff;
    }
    
    .generate-btn::before {
@@ -33,7 +33,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+    background-image: linear-gradient(to right, #12c149 0%, #aff947 100%);
     transition: .5s ease;
     display: block;
     z-index: -1;
@@ -41,4 +41,10 @@ body {
    
    .generate-btn:hover::before {
     width: 9em;
+   }
+
+   .input-container input {
+    -webkit-box-shadow: inset 0px 0px 13px -9px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0px 0px 13px -9px rgba(0,0,0,0.3);
+    box-shadow: inset 0px 0px 13px -9px rgba(0,0,0,0.32);
    }
