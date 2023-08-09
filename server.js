@@ -21,8 +21,8 @@ app.post('/images', async(req, res) =>{
     
     try {
         const response = await openai.createImage({
-            prompt: "A multicolor butterfly",
-            n: 2,
+            prompt: "beauty cats",
+            n: 6,
             size: "1024x1024",
         })
         console.log(response.data.data)
